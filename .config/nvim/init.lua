@@ -1,2 +1,2 @@
 require("config.lazy")
-vim.cmd.colorscheme("zellner")
+vim.cmd.colorscheme("desert")
