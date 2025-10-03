@@ -1,0 +1,26 @@
+[core]
+	quotepath = off
+	autocrlf = true
+	fileMode = false
+[user]
+	name = iperevoschikov
+	email = iperevoschikov@skbkontur.ru
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[gc]
+	autoDetach = false
+[commit]
+	gpgSign = false
+[pull]
+	rebase = false
+[gui]
+	pruneduringfetch = true
+[smartgit "submodule"]
+	fetchalways = false
+	update = true
+	initializenew = true
+[push]
+	recurseSubmodules = check
