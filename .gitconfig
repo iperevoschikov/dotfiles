@@ -1,6 +1,6 @@
 [core]
 	quotepath = off
-	autocrlf = true
+	autocrlf = false
 	fileMode = false
 [user]
 	name = iperevoschikov
