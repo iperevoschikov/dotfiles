@@ -16,7 +16,7 @@ return {
       formatters = {
         ["dotnet-format"] = {
           command = "dotnet",
-          args = { "format", "--include", "$FILENAME" },
+          args = { "format", "whitespace", "--folder", "--include", "$FILENAME" },
           stdin = false,
         },
       },
