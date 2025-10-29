@@ -62,7 +62,11 @@ return {
     },
     opts = {
       adapters = {
-        ["neotest-dotnet"] = {},
+        ["neotest-dotnet"] = {
+          dap = {
+            adapter_name = "coreclr",
+          },
+        },
       },
     },
   },
