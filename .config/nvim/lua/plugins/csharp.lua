@@ -3,7 +3,9 @@ return {
     "seblyng/roslyn.nvim",
     ---@module 'roslyn.config'
     ---@type RoslynNvimConfig
-    opts = {},
+    opts = {
+      -- your configuration comes here; leave empty for default settings
+    },
   },
   {
     "stevearc/conform.nvim",
