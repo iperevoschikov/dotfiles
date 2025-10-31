@@ -53,21 +53,28 @@ return {
     end,
   },
 
-  -- Neotest для .NET тестов
   {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-neotest/nvim-nio",
       "Issafalcon/neotest-dotnet",
     },
-    opts = {
-      adapters = {
-        ["neotest-dotnet"] = {
-          dap = {
-            adapter_name = "coreclr",
-          },
+    opts = function()
+      local neotest_dotnet = require("neotest-dotnet")
+
+      return {
+        log_level = 1, -- включаем отладку, чтобы видеть команды
+        adapters = {
+          neotest_dotnet({
+            dap = {
+              adapter_name = "coreclr",
+              justMyCode = false,
+            },
+            -- важно под Windows: адаптер будет искать .csproj, если нет .sln
+            discovery_root = "project",
+          }),
         },
-      },
-    },
+      }
+    end,
   },
 }
