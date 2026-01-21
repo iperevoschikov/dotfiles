@@ -1,3 +1,5 @@
 /.config/nvim/lazy-lock.json
 /.config/yandex-cloud
-.config/iterm2/
+/.config/iterm2/
+/.config/zed/*
+!/.config/zed/settings.json
