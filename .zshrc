@@ -128,3 +128,6 @@ if [ -f '/home/iperevoschikov/yandex-cloud/completion.zsh.inc' ]; then source '/
 if [ -f '/home/gangstatracer/yandex-cloud/path.bash.inc' ]; then source '/home/gangstatracer/yandex-cloud/path.bash.inc'; fi
 # The next line enables shell command completion for yc.
 if [ -f '/home/gangstatracer/yandex-cloud/completion.zsh.inc' ]; then source '/home/gangstatracer/yandex-cloud/completion.zsh.inc'; fi
+
+# opencode
+export PATH=/Users/iperevoschikov/.opencode/bin:$PATH
