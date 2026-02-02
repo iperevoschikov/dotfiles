@@ -10,7 +10,11 @@
       },
       "models": {
         "code-pro": {
-          "name": "code-pro"
+          "name": "code-pro",
+          "limit": {
+          "context": 60416,
+          "output": 4096
+          }
         }
       }
     }
