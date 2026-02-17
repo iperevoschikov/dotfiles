@@ -3,3 +3,4 @@
 /.config/iterm2/
 /.config/zed/*
 !/.config/zed/settings.json
+/.config/karabiner/automatic_backups/
