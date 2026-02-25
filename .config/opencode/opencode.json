@@ -12,16 +12,16 @@
         "code-pro": {
           "name": "code-pro",
           "limit": {
-          "context": 60416,
-          "output": 4096
-          },
-        "peview-code-pro": {
+            "context": 60416,
+            "output": 4096
+          }
+        },
+        "preview-code-pro": {
           "name": "preview-code-pro",
           "limit": {
             "context": 131072,
             "output": 131072
           }
-        }
         }
       }
     }
