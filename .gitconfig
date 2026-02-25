@@ -15,7 +15,7 @@
 [commit]
 	gpgSign = false
 [pull]
-	rebase = false
+	rebase = true
 [gui]
 	pruneduringfetch = true
 [smartgit "submodule"]
