@@ -4,3 +4,4 @@
 /.config/zed/*
 !/.config/zed/settings.json
 /.config/karabiner/automatic_backups/
+/.config/raycast/
