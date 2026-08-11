@@ -35,7 +35,7 @@ fi
 ln -sf "$DOTFILES_DIR/.zshrc" ~/.zshrc
 ln -sf "$DOTFILES_DIR/.p10k.zsh" ~/.p10k.zsh
 
-# .config
+# .config (включает wezterm, nvim, zed и т.д.)
 ln -sfn "$DOTFILES_DIR/.config" ~/.config
 
 # Git
