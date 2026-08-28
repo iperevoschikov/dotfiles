@@ -131,3 +131,10 @@ if [ -f '/home/gangstatracer/yandex-cloud/completion.zsh.inc' ]; then source '/h
 
 # opencode
 export PATH=/Users/iperevoschikov/.opencode/bin:$PATH
+
+# fnm
+FNM_PATH="/home/iperevoschikov/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell zsh)"
+fi

@@ -1,9 +1,21 @@
+# Ignore everything in .config by default...
+/.config/*
+
+# ...except folders already tracked in git
+!/.config/git/
+!/.config/github-copilot/
+!/.config/karabiner/
+!/.config/nvim/
+!/.config/opencode/
+!/.config/ranger/
+!/.config/zed/
+
+# Recursive self-symlink, must stay ignored
+.config/.config
+
+# Point exclusions within allowed folders
 /.config/nvim/lazy-lock.json
-/.config/yandex-cloud
-/.config/iterm2/
+/.config/github-copilot/apps.json
+/.config/karabiner/automatic_backups/
 /.config/zed/*
 !/.config/zed/settings.json
-/.config/karabiner/automatic_backups/
-/.config/raycast/
-/.config/github-copilot/apps.json
-/.config/uv/*
