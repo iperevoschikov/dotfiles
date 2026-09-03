@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "rag-aas-prd": {
+      "url": "https://rag-service-rag-aas-prd.kontur.host/mcp/",
+      "auth": "oauth",
+      "oauth": {
+        "clientId": "RAG-As-A-Service.API"
+      },
+      "requestTimeoutMs": 600000
+    }
+  }
+}

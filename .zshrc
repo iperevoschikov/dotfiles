@@ -138,3 +138,6 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "$(fnm env --shell zsh)"
 fi
+
+# Pi
+export PATH="/home/iperevoschikov/.local/share/fnm/node-versions/v24.18.0/installation/bin:$PATH"

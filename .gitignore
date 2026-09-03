@@ -19,3 +19,4 @@
 /.config/karabiner/automatic_backups/
 /.config/zed/*
 !/.config/zed/settings.json
+!/.config/mcp/
