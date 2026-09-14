@@ -36,6 +36,11 @@
         "clientId": "RAG-As-A-Service.API"
       },
       "timeout": 600000
+    },
+    "talk": {
+      "type": "remote",
+      "url": "http://127.0.0.1:44260/mcp",
+      "headers": { "Authorization": "Bearer {env:KONTUR_TALK_TOKEN}" }
     }
   }
 }
