@@ -12,18 +12,30 @@
         "code-pro": {
           "name": "code-pro",
           "limit": {
-            "context": 60416,
-            "output": 4096
-          }
-        },
-        "preview-code-pro": {
-          "name": "preview-code-pro",
-          "limit": {
             "context": 131072,
             "output": 131072
           }
+        },
+        "ultra": {
+          "name": "code-ultra",
+          "reasoning": true,
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          }
         }
       }
+    }
+  },
+  "mcp": {
+    "rag-aas-prd": {
+      "type": "remote",
+      "url": "https://rag-service-rag-aas-prd.kontur.host/mcp/",
+      "enabled": true,
+      "oauth": {
+        "clientId": "RAG-As-A-Service.API"
+      },
+      "timeout": 600000
     }
   }
 }

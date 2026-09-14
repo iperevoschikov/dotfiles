@@ -12,3 +12,6 @@ vim.opt.exrc = true
 vim.opt.secure = true
 
 vim.opt.errorformat = vim.o.errorformat .. ",%f(%l\\,%c):\\ error\\ %m,%f(%l\\,%c):\\ warning\\ %m"
+
+vim.opt.title = true
+vim.opt.titlestring = '[nvim] %{fnamemodify(getcwd(), ":t")}'

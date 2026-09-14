@@ -19,8 +19,4 @@
 /.config/karabiner/automatic_backups/
 /.config/zed/*
 !/.config/zed/settings.json
-<<<<<<< HEAD
-!/.config/mcp/
-=======
 .config/opencode/package-lock.json
->>>>>>> 7fdf566 (wip)
