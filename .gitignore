@@ -20,3 +20,5 @@
 /.config/zed/*
 !/.config/zed/settings.json
 .config/opencode/package-lock.json
+.DS_Store
+.config/opencode/service.json

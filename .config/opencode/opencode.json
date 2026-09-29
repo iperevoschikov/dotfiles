@@ -41,6 +41,28 @@
       "type": "remote",
       "url": "http://127.0.0.1:44260/mcp",
       "headers": { "Authorization": "Bearer {env:KONTUR_TALK_TOKEN}" }
+    },
+    "youtrack": {
+      "type": "remote",
+      "url": "https://mcp-youtrack.kube.kontur.host/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:YOUTRACK_TOKEN}"
+      }
+    },
+    "engeneering way": {
+      "type": "remote",
+      "url": "https://engineeringway.skbkontur.ru/mcp"
+    },
+    "obsidian": {
+      "type": "remote",
+      "url": "https://127.0.0.1:27124/mcp/",
+      "headers": {
+        "Authorization": "Bearer {env:OBSIDIAN_MCP_TOKEN}"
+      }
+    },
+    "universal": {
+      "type": "remote",
+      "url": "https://mcp.kontur.host/mcp/universal"
     }
   }
 }
