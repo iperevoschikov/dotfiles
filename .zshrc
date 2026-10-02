@@ -141,3 +141,6 @@ fi
 
 # Pi
 export PATH="/home/iperevoschikov/.local/share/fnm/node-versions/v24.18.0/installation/bin:$PATH"
+
+# opencode
+export PATH=/home/iperevoschikov/.opencode/bin:$PATH
