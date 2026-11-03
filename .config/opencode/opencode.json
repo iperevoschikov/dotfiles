@@ -1,10 +1,10 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "provider": {
+  "providers": {
     "kontur": {
-      "npm": "@ai-sdk/openai-compatible",
+      "package": "@opencode/ai/providers/openai-compatible",
       "name": "Kontur",
-      "options": {
+      "settings": {
         "baseURL": "https://srs-litellm.kontur.host/v1",
         "apiKey": "{env:KONTUR_CODE_PRO_API_KEY}"
       },
@@ -18,7 +18,11 @@
         },
         "ultra": {
           "name": "code-ultra",
-          "reasoning": true,
+          "capabilities": {
+            "reasoning": {
+              "supported": true
+            }
+          },
           "limit": {
             "context": 1048576,
             "output": 65536
@@ -28,41 +32,45 @@
     }
   },
   "mcp": {
-    "rag-aas-prd": {
-      "type": "remote",
-      "url": "https://rag-service-rag-aas-prd.kontur.host/mcp/",
-      "enabled": true,
-      "oauth": {
-        "clientId": "RAG-As-A-Service.API"
+    "servers": {
+      "rag-aas-prd": {
+        "type": "remote",
+        "url": "https://rag-service-rag-aas-prd.kontur.host/mcp/",
+        "oauth": {
+          "client_id": "RAG-As-A-Service.API"
+        },
+        "timeout": {
+          "execution": 600000
+        }
       },
-      "timeout": 600000
-    },
-    "talk": {
-      "type": "remote",
-      "url": "http://127.0.0.1:44260/mcp",
-      "headers": { "Authorization": "Bearer {env:KONTUR_TALK_TOKEN}" }
-    },
-    "youtrack": {
-      "type": "remote",
-      "url": "https://mcp-youtrack.kube.kontur.host/mcp",
-      "headers": {
-        "Authorization": "Bearer {env:YOUTRACK_TOKEN}"
+      "talk": {
+        "type": "remote",
+        "url": "http://127.0.0.1:44260/mcp",
+        "headers": { "Authorization": "Bearer {env:KONTUR_TALK_TOKEN}" }
+      },
+      "youtrack": {
+        "type": "remote",
+        "url": "https://mcp-youtrack.kube.kontur.host/mcp",
+        "headers": {
+          "Authorization": "Bearer {env:YOUTRACK_TOKEN}"
+        }
+      },
+      "engeneering way": {
+        "type": "remote",
+        "url": "https://engineeringway.skbkontur.ru/mcp"
+      },
+      "obsidian": {
+        "type": "remote",
+        "url": "https://127.0.0.1:27124/mcp/",
+        "headers": {
+          "Authorization": "Bearer {env:OBSIDIAN_MCP_TOKEN}"
+        }
+      },
+      "universal": {
+        "type": "remote",
+        "url": "https://mcp.kontur.host/mcp/universal"
       }
-    },
-    "engeneering way": {
-      "type": "remote",
-      "url": "https://engineeringway.skbkontur.ru/mcp"
-    },
-    "obsidian": {
-      "type": "remote",
-      "url": "https://127.0.0.1:27124/mcp/",
-      "headers": {
-        "Authorization": "Bearer {env:OBSIDIAN_MCP_TOKEN}"
-      }
-    },
-    "universal": {
-      "type": "remote",
-      "url": "https://mcp.kontur.host/mcp/universal"
     }
-  }
+  },
+  "experimental": { "schedules": true }
 }
